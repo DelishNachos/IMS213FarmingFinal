@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "SprCollision",
+    "path": "sprites/SprCollision/SprCollision.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
