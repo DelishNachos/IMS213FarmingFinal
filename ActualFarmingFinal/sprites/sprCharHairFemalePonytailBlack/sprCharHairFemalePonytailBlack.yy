@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"42a32553-540b-4b4f-95d2-22b9f342ba44","path":"sprites/sprCharHairFemalePonytailBlack/sprCharHairFemalePonytailBlack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"42a32553-540b-4b4f-95d2-22b9f342ba44","path":"sprites/sprCharHairFemalePonytailBlack/sprCharHairFemalePonytailBlack.yy",},"LayerId":{"name":"380c35f8-1cf7-4b61-8a24-f0c2158640fc","path":"sprites/sprCharHairFemalePonytailBlack/sprCharHairFemalePonytailBlack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprCharHairFemalePonytailBlack","path":"sprites/sprCharHairFemalePonytailBlack/sprCharHairFemalePonytailBlack.yy",},"resourceVersion":"1.0","name":"42a32553-540b-4b4f-95d2-22b9f342ba44","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"42a32553-540b-4b4f-95d2-22b9f342ba44","path":"sprites/sprCharHairFemalePonyTailBlack/sprCharHairFemalePonyTailBlack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"42a32553-540b-4b4f-95d2-22b9f342ba44","path":"sprites/sprCharHairFemalePonyTailBlack/sprCharHairFemalePonyTailBlack.yy",},"LayerId":{"name":"380c35f8-1cf7-4b61-8a24-f0c2158640fc","path":"sprites/sprCharHairFemalePonyTailBlack/sprCharHairFemalePonyTailBlack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprCharHairFemalePonyTailBlack","path":"sprites/sprCharHairFemalePonyTailBlack/sprCharHairFemalePonyTailBlack.yy",},"resourceVersion":"1.0","name":"42a32553-540b-4b4f-95d2-22b9f342ba44","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprCharHairFemalePonytailBlack","path":"sprites/sprCharHairFemalePonytailBlack/sprCharHairFemalePonytailBlack.yy",},
+    "spriteId": {"name":"sprCharHairFemalePonyTailBlack","path":"sprites/sprCharHairFemalePonyTailBlack/sprCharHairFemalePonyTailBlack.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"732793c6-80be-4b2a-ab12-8bccf2051d46","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"42a32553-540b-4b4f-95d2-22b9f342ba44","path":"sprites/sprCharHairFemalePonytailBlack/sprCharHairFemalePonytailBlack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"732793c6-80be-4b2a-ab12-8bccf2051d46","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"42a32553-540b-4b4f-95d2-22b9f342ba44","path":"sprites/sprCharHairFemalePonyTailBlack/sprCharHairFemalePonyTailBlack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 672,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprCharHairFemalePonytailBlack","path":"sprites/sprCharHairFemalePonytailBlack/sprCharHairFemalePonytailBlack.yy",},
+    "parent": {"name":"sprCharHairFemalePonyTailBlack","path":"sprites/sprCharHairFemalePonyTailBlack/sprCharHairFemalePonyTailBlack.yy",},
     "resourceVersion": "1.3",
-    "name": "sprCharHairFemalePonytailBlack",
+    "name": "sprCharHairFemalePonyTailBlack",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Characters/Hair.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sprCharHairFemalePonytailBlack",
+  "name": "sprCharHairFemalePonyTailBlack",
   "tags": [],
   "resourceType": "GMSprite",
 }
