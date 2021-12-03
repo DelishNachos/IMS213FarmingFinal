@@ -42,6 +42,7 @@
     {"id":{"name":"rm1","path":"rooms/rm1/rm1.yy",},"order":2,},
     {"id":{"name":"sprCharLegsFemalePantsWhite","path":"sprites/sprCharLegsFemalePantsWhite/sprCharLegsFemalePantsWhite.yy",},"order":2,},
     {"id":{"name":"tsCottage","path":"tilesets/tsCottage/tsCottage.yy",},"order":2,},
+    {"id":{"name":"rmHouseRoom","path":"rooms/rmHouseRoom/rmHouseRoom.yy",},"order":4,},
     {"id":{"name":"sprCharTorsoFemaleShirtWhite","path":"sprites/sprCharTorsoFemaleShirtWhite/sprCharTorsoFemaleShirtWhite.yy",},"order":2,},
     {"id":{"name":"objTransition","path":"objects/objTransition/objTransition.yy",},"order":4,},
     {"id":{"name":"sprCharHairFemalePonyTailBlack","path":"sprites/sprCharHairFemalePonyTailBlack/sprCharHairFemalePonyTailBlack.yy",},"order":4,},
@@ -63,6 +64,7 @@
     {"roomId":{"name":"rm1","path":"rooms/rm1/rm1.yy",},},
     {"roomId":{"name":"rmForest","path":"rooms/rmForest/rmForest.yy",},},
     {"roomId":{"name":"rmHouse","path":"rooms/rmHouse/rmHouse.yy",},},
+    {"roomId":{"name":"rmHouseRoom","path":"rooms/rmHouseRoom/rmHouseRoom.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
