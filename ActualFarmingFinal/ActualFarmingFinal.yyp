@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"respawn_crop","path":"scripts/respawn_crop/respawn_crop.yy",},"order":2,},
     {"id":{"name":"sprCharTorsoFemaleShirtMaroon","path":"sprites/sprCharTorsoFemaleShirtMaroon/sprCharTorsoFemaleShirtMaroon.yy",},"order":3,},
     {"id":{"name":"crops","path":"objects/crops/crops.yy",},"order":0,},
     {"id":{"name":"SprCollision","path":"sprites/SprCollision/SprCollision.yy",},"order":0,},
