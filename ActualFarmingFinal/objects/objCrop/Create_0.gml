@@ -4,12 +4,12 @@ frameHeight = 64;
 
 cropType = 0;
 daysOld = 0;
-growthStage = 3;
+growthStage = 0;
 growthStageDuration = 0;
 maxGrowthStage = (sprite_get_width(sprCrops)/frameWidth)-1;
 
 fullyGrown = false;
-sparkle = false;
+sparkle = -1;
 
 xx = x-(frameWidth/2)+2;
 yy = y-frameHeight+6;

@@ -1,4 +1,5 @@
 /// @description 
+#region Planting
 if(keyboard_check_pressed(ord("P"))){ planting = !planting } 
 
 if(planting){
@@ -15,3 +16,21 @@ if(planting){
 		instance_create_crop(mx, my, selectCrop);
 	}
 }	
+#endregion
+
+if(instance_exists(objCrop) and keyboard_check_pressed(ord("G"))){
+	with(objCrop){
+		if(growthStage < maxGrowthStage){
+			daysOld +=1;
+			
+			var firstGrowth = 0;
+			if(daysOld > 0) {firstGrowth = 1;}
+			
+			growthStage = firstGrowth + (daysOld div growthStageDuration);
+		} else {
+			growthStage = maxGrowthStage;
+			fullyGrown = true;
+			alarm[1] = 1;
+		}
+	}
+}
