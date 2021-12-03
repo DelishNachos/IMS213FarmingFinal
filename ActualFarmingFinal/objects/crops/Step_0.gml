@@ -1,4 +1,5 @@
 /// @description 
+if(room != rm1){ planting = false; exit; }
 #region Planting
 if(keyboard_check_pressed(ord("P"))){ planting = !planting } 
 

@@ -30,7 +30,8 @@ if(moveX != 0) {
 } else facing = -1;
 
 if(moveX != 0) {
-	if(place_meeting(x+moveX, y, objCollision)){
+	var collisionH = instance_place(x+moveX, y, objCollision)
+	if(collisionH != noone and collisionH.collideable){
 		repeat(abs(moveX)){
 			if(!place_meeting(x+sign(moveX), y, objCollision)) {x += sign(moveX); }
 			else {break;}
@@ -40,7 +41,8 @@ if(moveX != 0) {
 }
 
 else if(moveY != 0){
-	if(place_meeting(x, y+moveY, objCollision)){
+	var collisionV = instance_place(x, y+moveY, objCollision)
+	if(collisionV != noone and collisionV.collideable){
 		repeat(abs(moveY)){
 			if(!place_meeting(x, y+sign(moveY), objCollision)) {y += sign(moveY);}
 			else {break;}

@@ -1,13 +1,13 @@
 {
-  "spriteId": {
-    "name": "SprCollision",
-    "path": "sprites/SprCollision/SprCollision.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": false,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "objCollision",
+    "path": "objects/objCollision/objCollision.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -20,17 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Meta",
-    "path": "folders/Objects/Meta.yy",
+    "name": "Beings",
+    "path": "folders/Objects/Beings.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objCollision",
+  "name": "parDepthObj",
   "tags": [],
   "resourceType": "GMObject",
 }

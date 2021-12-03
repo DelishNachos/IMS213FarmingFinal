@@ -1,3 +1,5 @@
+event_inherited();
+
 wSpd = 1;
 nSpd = 2;
 rSpd = 3;
