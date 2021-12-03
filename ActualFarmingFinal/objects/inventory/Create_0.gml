@@ -7,7 +7,7 @@ invSlotsWidth = 8;
 invSlotsHeight = 3;
 
 selectedSlot = 0;
-pickupItem = -1;
+pickupSlot = -1;
 mSlotX = 0;
 mSlotY = 0;
 
