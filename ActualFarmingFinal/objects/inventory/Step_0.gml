@@ -60,6 +60,19 @@ if(pickupSlot != -1){
 	}
 }
 else if(ssItem != item.none){
+	if(mouse_check_button_pressed(mb_middle)){
+		invGrid[# 1, selectedSlot] -= 1;
+		if(invGrid[# 1, selectedSlot] == 0) {invGrid[# 0, selectedSlot] = item.none;}
+		
+		var inst = instance_create_layer(objPlayer.x, objPlayer.y, "Instances", objItem);
+		with(inst){
+			itemNum = ssItem;
+			xFrame = itemNum mod (sprWidth/cellSize);
+			yFrame = itemNum div (sprWidth/cellSize);
+		}
+		show_debug_message("Dropped an item");
+	}
+	
 	if(mouse_check_button_pressed(mb_right)){
 		pickupSlot = selectedSlot;
 	}
