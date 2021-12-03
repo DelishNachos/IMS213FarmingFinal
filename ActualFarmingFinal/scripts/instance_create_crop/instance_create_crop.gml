@@ -14,7 +14,7 @@ function instance_create_crop(argument0, argument1, argument2) {
 		var xx = gx * cs;
 		var yy = gy * cs;
 		
-		var layID = layer_get_id("T_soil");
+		var layID = layer_get_id("tSoil");
 		var mapID = layer_tilemap_get_id(layID);
 		var data = tilemap_get_at_pixel(mapID, argument0, argument1);
 		
@@ -26,7 +26,7 @@ function instance_create_crop(argument0, argument1, argument2) {
 		}
 	
 		//Create the instance
-		var inst = instance_create_layer(argument0, argument1, "Instances", objCrop);
+		var inst = instance_create_layer(xx + (cs/2), yy + (cs/2), "Instances", objCrop);
 		iGrid[# gx, gy] = inst;
 
 		//Give the crop its characteristics
