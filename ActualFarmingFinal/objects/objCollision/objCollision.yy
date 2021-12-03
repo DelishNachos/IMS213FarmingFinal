@@ -28,7 +28,7 @@
     "path": "folders/Objects/Meta.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objCollisions",
+  "name": "objCollision",
   "tags": [],
   "resourceType": "GMObject",
 }

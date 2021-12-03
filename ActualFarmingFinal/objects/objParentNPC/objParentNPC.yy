@@ -7,7 +7,10 @@
     "path": "sprites/sprCharMask/sprCharMask.yy",
   },
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "objCollision",
+    "path": "objects/objCollision/objCollision.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
