@@ -44,3 +44,6 @@ font = fntRegText;
 draw_set_font(font)
 textHeight = string_height("M");
 
+choice = 0;
+choiceCol = c_white;
+

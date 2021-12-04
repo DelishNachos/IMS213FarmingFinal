@@ -144,6 +144,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":352.0,"resourceVersion":"1.0","name":"inst_6501EEB4","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"camera","path":"objects/camera/camera.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":480.0,"y":384.0,"resourceVersion":"1.0","name":"inst_E2FB0D8","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"objAlyssa","path":"objects/objAlyssa/objAlyssa.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":416.0,"resourceVersion":"1.0","name":"inst_499A2C64","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"objPatrick","path":"objects/objPatrick/objPatrick.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":640.0,"y":640.0,"resourceVersion":"1.0","name":"inst_4D6CF5C0","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":900,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"visible":true,"depth":1000,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
         {"tilesetId":{"name":"tsTerrain","path":"tilesets/tsTerrain/tsTerrain.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":32,"SerialiseHeight":24,"TileSerialiseData":[
@@ -353,6 +354,7 @@
     {"name":"inst_75538256","path":"rooms/rm1/rm1.yy",},
     {"name":"inst_6B2F6873","path":"rooms/rm1/rm1.yy",},
     {"name":"inst_499A2C64","path":"rooms/rm1/rm1.yy",},
+    {"name":"inst_4D6CF5C0","path":"rooms/rm1/rm1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

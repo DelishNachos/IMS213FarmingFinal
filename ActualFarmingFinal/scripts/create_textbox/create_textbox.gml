@@ -1,8 +1,9 @@
-function create_textbox(_text, _speakers){
+function create_textbox(_text, _speakers, _nextLine){
 	var tbox = instance_create_layer(0,0, "Text", objTextbox);
 	
 	with(tbox){
 		text = _text;
+		nextLine = _nextLine;
 		var len = array_length(_text);
 		var i = 0; repeat(len){
 			names[i] = _speakers[i].speakerName;

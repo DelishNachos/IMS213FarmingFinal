@@ -15,6 +15,7 @@
     {"id":{"name":"objAlyssa","path":"objects/objAlyssa/objAlyssa.yy",},"order":3,},
     {"id":{"name":"sprCharMask","path":"sprites/sprCharMask/sprCharMask.yy",},"order":0,},
     {"id":{"name":"objCollision","path":"objects/objCollision/objCollision.yy",},"order":3,},
+    {"id":{"name":"objPatrick","path":"objects/objPatrick/objPatrick.yy",},"order":4,},
     {"id":{"name":"objParentNPC","path":"objects/objParentNPC/objParentNPC.yy",},"order":1,},
     {"id":{"name":"sprCharBaseFemale","path":"sprites/sprCharBaseFemale/sprCharBaseFemale.yy",},"order":2,},
     {"id":{"name":"sprCharHairMalePartedBlonde","path":"sprites/sprCharHairMalePartedBlonde/sprCharHairMalePartedBlonde.yy",},"order":3,},
