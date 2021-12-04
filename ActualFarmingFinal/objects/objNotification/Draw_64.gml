@@ -1,6 +1,7 @@
 var notGrid = ds_notifications;
 var gridHeight = ds_grid_height(notGrid);
 var c = c_white;
+draw_set_font(font);
 
 var yy = 0; repeat(gridHeight){
 	var notSign = "";

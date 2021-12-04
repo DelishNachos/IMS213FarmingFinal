@@ -31,11 +31,15 @@ selectedSlot = min(invSlots - 1, mSlotX + (mSlotY * invSlotsWidth));
 
 var invGrid = ds_inventory;
 var ssItem = invGrid[# 0, selectedSlot];
+var createNot = false;
 
 if(pickupSlot != -1){
 	if(mouse_check_button_pressed(mb_left)){
 		if(!mouseInInv){
+			createNot = true;
+			
 			var pitem = invGrid[# 0, pickupSlot];
+			var in = pitem;
 			invGrid[# 1, pickupSlot] -= 1;
 			
 			if(invGrid[# 1, pickupSlot] == 0){
@@ -78,6 +82,9 @@ if(pickupSlot != -1){
 }
 else if(ssItem != item.none){
 	if(mouse_check_button_pressed(mb_middle)){
+		createNot = true;
+		var in = invGrid[# 0, selectedSlot];
+		
 		invGrid[# 1, selectedSlot] -= 1;
 		if(invGrid[# 1, selectedSlot] == 0) {invGrid[# 0, selectedSlot] = item.none;}
 		
@@ -93,4 +100,43 @@ else if(ssItem != item.none){
 	if(mouse_check_button_pressed(mb_right)){
 		pickupSlot = selectedSlot;
 	}
+}
+
+if(createNot){
+	#region Create Notification
+				
+if(!instance_exists(objNotification)) { instance_create_layer(0,0,"Instances", objNotification); }
+
+with(objNotification){
+	if(!ds_exists(ds_notifications, ds_type_grid)){
+		ds_notifications = ds_grid_create(2, 1);
+		var notGrid = ds_notifications;
+		notGrid[# 0, 0] = -1;
+		notGrid[# 1, 0] = inventory.ds_items_info[# 0, in];
+	} else{
+		event_perform(ev_other, ev_user0);
+						
+		var notGrid = ds_notifications;
+		var gridHeight = ds_grid_height(notGrid);
+		var name = inventory.ds_items_info[# 0, in];
+		var inGrid = false;
+						
+		var yy = 0; repeat (gridHeight){
+			if(name == notGrid[# 1, yy]){
+				notGrid[# 0, yy] -= 1;
+				inGrid = true;
+				break;
+			}	
+			yy++;
+		}
+						
+		if(!inGrid){
+			ds_grid_resize(notGrid, 2, gridHeight + 1);
+			notGrid[# 0, gridHeight] = -1;
+			notGrid[# 1, gridHeight] = inventory.ds_items_info[# 0, in];
+		}
+	}
+}
+				
+#endregion
 }
