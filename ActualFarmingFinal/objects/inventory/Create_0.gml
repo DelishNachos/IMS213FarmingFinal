@@ -36,6 +36,9 @@ infoY = invUIY + (7 * scale);
 slotsX = infoX;
 slotsY = invUIY + (40 * scale);
 
+descX = infoX;
+descY = invUIY + (156 * scale);
+
 
 ds_player_info = ds_grid_create(2, 4);
 var infoGrid = ds_player_info;
@@ -97,26 +100,24 @@ ds_items_info[# z, i++] = "Potion";
 ds_items_info[# z, i++] = "Starfish";
 ds_items_info[# z, i++] = "Mushroom";
 
-z = 1, i = 0;
-ds_items_info[# z, i++] = "Nothing";
-ds_items_info[# z, i++] = "Tomato";
-ds_items_info[# z, i++] = "Potato";
-ds_items_info[# z, i++] = "Carrot";
-ds_items_info[# z, i++] = "Artichoke";
-ds_items_info[# z, i++] = "Chilli";
-ds_items_info[# z, i++] = "Gourd";
-ds_items_info[# z, i++] = "Corn";
-ds_items_info[# z, i++] = "Wood";
-ds_items_info[# z, i++] = "Stone";
-ds_items_info[# z, i++] = "Bucket";
-ds_items_info[# z, i++] = "Chair";
-ds_items_info[# z, i++] = "Picture";
-ds_items_info[# z, i++] = "Axe";
-ds_items_info[# z, i++] = "Potion";
-ds_items_info[# z, i++] = "Starfish";
-ds_items_info[# z, i++] = "Mushroom";
-
-
+z = 1; i = 0;
+ds_items_info[# z, i++] = "Empty.";
+ds_items_info[# z, i++] = "To-mah... may-to.";
+ds_items_info[# z, i++] = "Pre-chips.";
+ds_items_info[# z, i++] = "Keep away from rabbits.";
+ds_items_info[# z, i++] = "The heartiest vegetable.";
+ds_items_info[# z, i++] = "But oddly hot.";
+ds_items_info[# z, i++] = "Or is it an eggplant?";
+ds_items_info[# z, i++] = "Better popped.";
+ds_items_info[# z, i++] = "Knock on it.";
+ds_items_info[# z, i++] = "There's nothing written in it.";
+ds_items_info[# z, i++] = "You could fit a bucket-full of water in here!";
+ds_items_info[# z, i++] = "This chair is just right.";
+ds_items_info[# z, i++] = "Davinki?";
+ds_items_info[# z, i++] = "You've been Chopped.";
+ds_items_info[# z, i++] = "The liquid looks... oozy.";
+ds_items_info[# z, i++] = "Is this the Krusty Krab?";
+ds_items_info[# z, i++] = "A fungus; not mush room for interpretation.";
 
 #endregion
 

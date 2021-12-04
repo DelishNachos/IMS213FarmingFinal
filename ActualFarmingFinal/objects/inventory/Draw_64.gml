@@ -57,6 +57,18 @@ repeat(invSlots){
 	iy = ii div invSlotsWidth;
 }
 
+
+var iInfoGrid = ds_items_info, description = ""; 
+iItem = invGrid[# 0, selectedSlot];
+
+if(iItem > 0){
+	draw_set_font(fntRegText);
+	description = iInfoGrid[# 0, iItem] + ". " + iInfoGrid[# 1, iItem];
+	c = c_black;
+	draw_text_ext_color(descX, descY, description, string_height("M"), invWidth * scale - (xBuffer*2),c,c,c,c, 1); 
+}
+
+
 if(pickupSlot != -1){
 	iItem = invGrid[# 0, pickupSlot];
 	sx = (iItem mod sprInvItemsColumns) * cellSize;

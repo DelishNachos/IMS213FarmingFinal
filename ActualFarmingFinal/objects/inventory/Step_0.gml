@@ -15,6 +15,7 @@ var iMouseY = mouseY - slotsY;
 var nx = iMouseX div cellXBuff;
 var ny = iMouseY div cellYBuff;
 
+var mouseInInv = true;
 if(nx >= 0 and nx < invSlotsWidth and ny >= 0 and ny < invSlotsHeight){
 	var sx = iMouseX - (nx*cellXBuff);
 	var sy = iMouseY - (ny*cellXBuff);
@@ -23,7 +24,7 @@ if(nx >= 0 and nx < invSlotsWidth and ny >= 0 and ny < invSlotsHeight){
 		mSlotX = nx;
 		mSlotY = ny;
 	}
-}
+} else { mouseInInv = false; }
 
 selectedSlot = min(invSlots - 1, mSlotX + (mSlotY * invSlotsWidth));
 #endregion
@@ -33,7 +34,23 @@ var ssItem = invGrid[# 0, selectedSlot];
 
 if(pickupSlot != -1){
 	if(mouse_check_button_pressed(mb_left)){
-		if(ssItem == item.none){
+		if(!mouseInInv){
+			var pitem = invGrid[# 0, pickupSlot];
+			invGrid[# 1, pickupSlot] -= 1;
+			
+			if(invGrid[# 1, pickupSlot] == 0){
+				invGrid[# 0, pickupSlot] = item.none;
+				pickupSlot = -1;
+			}
+		
+			var inst = instance_create_layer(objPlayer.x, objPlayer.y, "Instances", objItem);
+			with(inst){
+				itemNum = pitem;
+				xFrame = itemNum mod (sprWidth/cellSize);
+				yFrame = itemNum div (sprWidth/cellSize);
+			}
+		}
+			else if(ssItem == item.none){
 			invGrid[# 0, selectedSlot] = invGrid[# 0, pickupSlot];
 			invGrid[# 1, selectedSlot] = invGrid[# 1, pickupSlot];
 			

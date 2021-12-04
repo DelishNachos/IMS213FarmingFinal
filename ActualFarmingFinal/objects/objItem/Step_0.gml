@@ -1,7 +1,7 @@
 if(dropMove){
 	x = lerp(x, goalX, 0.1);	
-	y = lerp(x, goalY, 0.1);
-	if((abs(x-goalX) < 1) and (abs(y-goalY))) {dropMove = false;}
+	y = lerp(y, goalY, 0.1);
+	if( abs(x-goalX) < 1 and abs(y-goalY) < 1) {dropMove = false;}
 } else{
 	if(!keyboard_check(ord("O"))) exit;
 	
