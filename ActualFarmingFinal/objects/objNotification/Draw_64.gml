@@ -8,7 +8,7 @@ var yy = 0; repeat(gridHeight){
 	
 	draw_text_color(
 		100, (guiHeight/2) + (yy * strHeight) - (gridHeight*strHeight),
-		string(notGrid[# 0, yy]) + " " + string(notGrid[# 1, yy]),
+		notSign + string(notGrid[# 0, yy]) + " " + string(notGrid[# 1, yy]),
 		c, c, c, c, notAlpha
 	);
 	

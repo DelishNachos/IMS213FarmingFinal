@@ -60,6 +60,8 @@ if(dropMove){
 						notGrid[# 0, 0] = 1;
 						notGrid[# 1, 0] = inventory.ds_items_info[# 0, in];
 					} else{
+						event_perform(ev_other, ev_user0);
+						
 						var notGrid = ds_notifications;
 						var gridHeight = ds_grid_height(notGrid);
 						var name = inventory.ds_items_info[# 0, in];
@@ -67,7 +69,7 @@ if(dropMove){
 						
 						var yy = 0; repeat (gridHeight){
 							if(name == notGrid[# 1, yy]){
-								notGrid[# 1, yy] += 1;
+								notGrid[# 0, yy] += 1;
 								inGrid = true;
 								break;
 							}	
@@ -75,7 +77,9 @@ if(dropMove){
 						}
 						
 						if(!inGrid){
-							
+							ds_grid_resize(notGrid, 2, gridHeight + 1);
+							notGrid[# 0, gridHeight] = 1;
+							notGrid[# 1, gridHeight] = inventory.ds_items_info[# 0, in];
 						}
 					}
 				}

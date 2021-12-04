@@ -8,4 +8,4 @@ font = fntTitle;
 
 draw_set_font(font);
 strHeight = string_height("M");
-guiHeight = display_get_gui_height(notGrid);
+guiHeight = display_get_gui_height();
