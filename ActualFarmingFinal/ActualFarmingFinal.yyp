@@ -65,6 +65,7 @@
     {"id":{"name":"camera","path":"objects/camera/camera.yy",},"order":1,},
     {"id":{"name":"sndVoice2","path":"sounds/sndVoice2/sndVoice2.yy",},"order":1,},
     {"id":{"name":"rm1","path":"rooms/rm1/rm1.yy",},"order":2,},
+    {"id":{"name":"sprHotbarUI","path":"sprites/sprHotbarUI/sprHotbarUI.yy",},"order":3,},
     {"id":{"name":"sprCharLegsFemalePantsWhite","path":"sprites/sprCharLegsFemalePantsWhite/sprCharLegsFemalePantsWhite.yy",},"order":2,},
     {"id":{"name":"merge_number","path":"scripts/merge_number/merge_number.yy",},"order":3,},
     {"id":{"name":"tsCottage","path":"tilesets/tsCottage/tsCottage.yy",},"order":2,},

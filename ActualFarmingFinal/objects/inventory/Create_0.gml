@@ -5,6 +5,8 @@ showInv = false;
 invSlots = 17;
 invSlotsWidth = 8;
 invSlotsHeight = 3;
+hotbarWidth = 8;
+horbarHeight = 1;
 
 selectedSlot = 0;
 pickupSlot = -1;
@@ -141,6 +143,8 @@ ds_items_info[# z, i++] = "Seeds but for Gourds.";
 ds_items_info[# z, i++] = "Seeds but for Corn.";
 
 #endregion
+
+ds_hotbar = ds_grid_create(2,8)
 
 var yy = 0; repeat(invSlots){
 	dsInv[# 0, yy] = irandom_range(1, item.height-1); 
