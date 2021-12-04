@@ -21,11 +21,12 @@ sprShadow = sprCharShadow;
 
 moveX = 0;
 moveY = 0;
+canMove = true;
 
 alarm[1] = 1 * room_speed;
 
 portraitIndex = 0;
 voice = sndVoice1;
-name = "Anonymous";
+speakerName = "Anonymous";
 text = ["This person has nothing to say."];
 speakers = [id];

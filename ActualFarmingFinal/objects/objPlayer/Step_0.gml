@@ -67,10 +67,23 @@ if(inst != noone and facing == inst.playerFacingBefore) {
 
 //Textbox
 if(inputInteract){
-	var inst = collision_rectangle(x - radius, y - radius, x + radius, y + radius, objParentNPC, false, false);	
+	
+	if(activeTextbox == noone){
+	
+		var inst = collision_rectangle(x - radius, y - radius, x + radius, y + radius, objParentNPC, false, false);	
 
-	if(inst != noone){
-		create_textbox(	
+		if(inst != noone){
+			with(inst){
+				var tbox = create_textbox(text, speakers);
+				canMove = false;
+				moveX = 0; moveY = 0;
+			}
+			activeTextbox = tbox;
+		}
+	} else{
+		if(!instance_exists(activeTextbox)){
+			activeTextbox = noone;	
+		}
 	}
 }
 

@@ -1,0 +1,1 @@
+with(objParentNPC) { canMove = true; }

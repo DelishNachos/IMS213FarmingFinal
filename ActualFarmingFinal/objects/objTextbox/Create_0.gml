@@ -31,7 +31,7 @@ pause = false;
 
 text[0] = ""
 page = 0;
-name = "";
+speakerName = "";
 voice = sndVoice1;
 
 interactKey = mb_left;
@@ -44,4 +44,3 @@ font = fntRegText;
 draw_set_font(font)
 textHeight = string_height("M");
 
-event_perform(ev_other, ev_user1);

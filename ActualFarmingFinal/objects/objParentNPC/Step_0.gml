@@ -1,3 +1,4 @@
+if(!canMove) exit;
 
 
 if(moveX != 0) {

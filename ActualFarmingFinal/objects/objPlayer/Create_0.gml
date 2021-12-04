@@ -21,8 +21,9 @@ sprShadow = sprCharShadow;
 
 facing = 0;
 
-portraitIndex = ;
+portraitIndex = 7;
 voice = sndVoice2;
-name = "Player";
+speakerName = "Player";
 
-radius = 16;
+radius = 24;
+activeTextbox = noone;
