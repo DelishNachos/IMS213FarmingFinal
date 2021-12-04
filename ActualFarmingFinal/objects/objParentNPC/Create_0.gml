@@ -31,3 +31,4 @@ speakerName = "Anonymous";
 text = ["This person has nothing to say."];
 speakers = [id];
 nextLine = [0];
+scripts = -1;

@@ -2,6 +2,8 @@ if(mouse_check_button_pressed(interactKey) or keyboard_check_pressed(altInteract
 	
 	if(!choiceDialogue and counter < strLength){ counter = strLength; }
 	else if(page < array_length(text) - 1){
+		event_perform(ev_other, ev_user2);
+		
 		var line = nextLine[page];
 		if(choiceDialogue) line = line[choice];
 		

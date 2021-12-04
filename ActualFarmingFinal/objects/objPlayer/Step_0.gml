@@ -74,7 +74,7 @@ if(inputInteract){
 
 		if(inst != noone){
 			with(inst){
-				var tbox = create_textbox(text, speakers, nextLine);
+				var tbox = create_textbox(text, speakers, nextLine, scripts);
 				canMove = false;
 				moveX = 0; moveY = 0;
 			}

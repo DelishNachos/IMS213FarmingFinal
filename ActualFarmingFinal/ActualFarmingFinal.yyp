@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"sndVoice4","path":"sounds/sndVoice4/sndVoice4.yy",},"order":3,},
     {"id":{"name":"respawn_crop","path":"scripts/respawn_crop/respawn_crop.yy",},"order":2,},
+    {"id":{"name":"script_execute_alt","path":"scripts/script_execute_alt/script_execute_alt.yy",},"order":7,},
     {"id":{"name":"sprCharTorsoFemaleShirtMaroon","path":"sprites/sprCharTorsoFemaleShirtMaroon/sprCharTorsoFemaleShirtMaroon.yy",},"order":3,},
     {"id":{"name":"crops","path":"objects/crops/crops.yy",},"order":0,},
     {"id":{"name":"SprCollision","path":"sprites/SprCollision/SprCollision.yy",},"order":0,},
@@ -69,6 +70,7 @@
     {"id":{"name":"tsCottage","path":"tilesets/tsCottage/tsCottage.yy",},"order":2,},
     {"id":{"name":"rmHouseRoom","path":"rooms/rmHouseRoom/rmHouseRoom.yy",},"order":4,},
     {"id":{"name":"objNotification","path":"objects/objNotification/objNotification.yy",},"order":8,},
+    {"id":{"name":"change_variable","path":"scripts/change_variable/change_variable.yy",},"order":6,},
     {"id":{"name":"sprCharTorsoFemaleShirtWhite","path":"sprites/sprCharTorsoFemaleShirtWhite/sprCharTorsoFemaleShirtWhite.yy",},"order":2,},
     {"id":{"name":"objTransition","path":"objects/objTransition/objTransition.yy",},"order":4,},
     {"id":{"name":"dayCycle","path":"objects/dayCycle/dayCycle.yy",},"order":6,},

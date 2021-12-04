@@ -20,3 +20,12 @@ text = [
 ];
 speakers = [id, objPlayer, id, id];
 nextLine = [0, [2, 3], -1, -1];
+scripts = [
+	[change_variable, id, "sprTorso", -1],
+	[
+		[change_variable, id, "sprFeet", -1],
+		[change_variable, id, "sprTorso", sprCharTorsoMaleShirtMaroon],
+	],
+	-1,
+	-1
+];

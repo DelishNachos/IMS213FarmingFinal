@@ -57,24 +57,31 @@ ds_inventory = ds_grid_create(2, invSlots);
 var dsInv = ds_inventory;
 
 enum item{
-	none		=0,
-	tomato		=1,
-	potato		=2,
-	carrot		=3,
-	artichoke	=4,
-	chilli		=5,
-	gourd		=6,
-	corn		=7,
-	wood		=8,
-	stone		=9,
-	bucket		=10,
-	chair		=11,
-	picture		=12,
-	axe			=13,
-	potion		=14,
-	starfish	=15,
-	mushroom	=16,
-	height		=17,
+	none				=0,
+	tomato				=1,
+	potato				=2,
+	carrot				=3,
+	artichoke			=4,
+	chilli				=5,
+	gourd				=6,
+	corn				=7,
+	wood				=8,
+	stone				=9,
+	bucket				=10,
+	chair				=11,
+	picture				=12,
+	axe					=13,
+	potion				=14,
+	starfish			=15,
+	mushroom			=16,
+	tomatoSeeds			=17,
+	potatoSeeds			=18,
+	carrotSeeds			=19,
+	artichokeSeeds		=20,
+	chilliSeeds			=21,
+	gourdSeeds			=22,
+	cornSeeds			=23,
+	height				=24,
 }
 
 #region Create Items Info Grid
@@ -99,6 +106,13 @@ ds_items_info[# z, i++] = "Axe";
 ds_items_info[# z, i++] = "Potion";
 ds_items_info[# z, i++] = "Starfish";
 ds_items_info[# z, i++] = "Mushroom";
+ds_items_info[# z, i++] = "Tomato Seeds";
+ds_items_info[# z, i++] = "Potato Seeds";
+ds_items_info[# z, i++] = "Carrot Seeds";
+ds_items_info[# z, i++] = "Artichoke Seeds";
+ds_items_info[# z, i++] = "Chilli Seeds";
+ds_items_info[# z, i++] = "Gourd Seeds";
+ds_items_info[# z, i++] = "Corn Seeds";
 
 z = 1; i = 0;
 ds_items_info[# z, i++] = "Empty.";
@@ -118,6 +132,13 @@ ds_items_info[# z, i++] = "You've been Chopped.";
 ds_items_info[# z, i++] = "The liquid looks... oozy.";
 ds_items_info[# z, i++] = "Is this the Krusty Krab?";
 ds_items_info[# z, i++] = "A fungus; not mush room for interpretation.";
+ds_items_info[# z, i++] = "Seeds but for Tomatoes.";
+ds_items_info[# z, i++] = "Seeds but for Potatoes.";
+ds_items_info[# z, i++] = "Seeds but for Carrots.";
+ds_items_info[# z, i++] = "Seeds but for Artichokes.";
+ds_items_info[# z, i++] = "Seeds but for Chilli.";
+ds_items_info[# z, i++] = "Seeds but for Gourds.";
+ds_items_info[# z, i++] = "Seeds but for Corn.";
 
 #endregion
 
