@@ -26,7 +26,6 @@ sprInvUI = sprInventoryUI;
 sprInvItems = sprInventoryItems;
 
 sprInvItemsColumns = sprite_get_width(sprInvItems) / cellSize;
-sprInvItemsRows = sprite_get_height(sprInvItems) / cellSize;
 
 invUIX = (guiWidth * .5) - (invWidth * .5 * scale);
 invUIY = (guiHeight * .5) - (invHeight * .5 * scale);
@@ -74,6 +73,52 @@ enum item{
 	mushroom	=16,
 	height		=17,
 }
+
+#region Create Items Info Grid
+
+ds_items_info = ds_grid_create(2, item.height);
+
+var z = 0, i = 0;
+ds_items_info[# z, i++] = "Nothing";
+ds_items_info[# z, i++] = "Tomato";
+ds_items_info[# z, i++] = "Potato";
+ds_items_info[# z, i++] = "Carrot";
+ds_items_info[# z, i++] = "Artichoke";
+ds_items_info[# z, i++] = "Chilli";
+ds_items_info[# z, i++] = "Gourd";
+ds_items_info[# z, i++] = "Corn";
+ds_items_info[# z, i++] = "Wood";
+ds_items_info[# z, i++] = "Stone";
+ds_items_info[# z, i++] = "Bucket";
+ds_items_info[# z, i++] = "Chair";
+ds_items_info[# z, i++] = "Picture";
+ds_items_info[# z, i++] = "Axe";
+ds_items_info[# z, i++] = "Potion";
+ds_items_info[# z, i++] = "Starfish";
+ds_items_info[# z, i++] = "Mushroom";
+
+z = 1, i = 0;
+ds_items_info[# z, i++] = "Nothing";
+ds_items_info[# z, i++] = "Tomato";
+ds_items_info[# z, i++] = "Potato";
+ds_items_info[# z, i++] = "Carrot";
+ds_items_info[# z, i++] = "Artichoke";
+ds_items_info[# z, i++] = "Chilli";
+ds_items_info[# z, i++] = "Gourd";
+ds_items_info[# z, i++] = "Corn";
+ds_items_info[# z, i++] = "Wood";
+ds_items_info[# z, i++] = "Stone";
+ds_items_info[# z, i++] = "Bucket";
+ds_items_info[# z, i++] = "Chair";
+ds_items_info[# z, i++] = "Picture";
+ds_items_info[# z, i++] = "Axe";
+ds_items_info[# z, i++] = "Potion";
+ds_items_info[# z, i++] = "Starfish";
+ds_items_info[# z, i++] = "Mushroom";
+
+
+
+#endregion
 
 var yy = 0; repeat(invSlots){
 	dsInv[# 0, yy] = irandom_range(1, item.height-1); 

@@ -11,3 +11,9 @@ yFrame = 0;
 
 xOffset = cellSize/2;
 yOffset = cellSize * (2/3);
+
+dropMove = true;
+var itemDir = irandom_range(0, 359);
+var len = 32;
+goalX = x + lengthdir_x(len, itemDir);
+goalY = y + lengthdir_y(len, itemDir);
