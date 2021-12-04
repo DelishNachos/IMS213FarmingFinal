@@ -23,3 +23,9 @@ moveX = 0;
 moveY = 0;
 
 alarm[1] = 1 * room_speed;
+
+portraitIndex = 0;
+voice = sndVoice1;
+name = "Anonymous";
+text = ["This person has nothing to say."];
+speakers = [id];

@@ -20,3 +20,7 @@ sprFeet = sprCharFeetMaleShoesBrown;
 sprShadow = sprCharShadow;
 
 facing = 0;
+
+portraitIndex = ;
+voice = sndVoice3;
+name = "Player";

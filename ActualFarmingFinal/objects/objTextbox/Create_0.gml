@@ -27,11 +27,12 @@ textMaxWidth = boxWidth - (2*xBuffer);
 
 portraitIndex = 0;
 counter = 0;
+pause = false;
 
-text[0] = "this is a test this is a test this is a test this is a test this is a test this is a test this is a test this is a test";
-text[1] = "This is the second page";
+text[0] = ""
 page = 0;
-name = "Name";
+name = "";
+voice = sndVoice1;
 
 interactKey = mb_left;
 
@@ -41,3 +42,5 @@ font = fntRegText;
 
 draw_set_font(font)
 textHeight = string_height("M");
+
+event_perform(ev_other, ev_user1);

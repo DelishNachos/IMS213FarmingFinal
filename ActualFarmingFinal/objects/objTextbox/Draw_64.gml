@@ -22,10 +22,18 @@ draw_text_color(nameTextX, nameTextY, name, c,c,c,c, 1);
 draw_set_halign(fa_left); draw_set_valign(fa_top);
 
 //draw text
-if(counter < string_length(text[page])){
+if(!pause and counter < strLength){
 	counter++;
+	if(counter mod 4 == 0){ audio_play_sound(voice, 10, false); }	
+	
+	switch(string_char_at(textWrapped, counter)){
+		case ",": pause = true; alarm[1] = 15; break;
+		case ".":
+		case "?":
+		case "!": pause = true; alarm[1] = 25; break;
+	}
 }
-var subString = string_copy(text[page], 1, counter);
+var subString = string_copy(textWrapped, 1, counter);
 
 c = textCol;
-draw_text_ext_color(textX, textY, subString, textHeight, textMaxWidth, c,c,c,c, 1);
+draw_text_color(textX, textY, subString, c,c,c,c, 1);
