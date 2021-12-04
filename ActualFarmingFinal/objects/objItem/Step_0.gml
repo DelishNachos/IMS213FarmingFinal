@@ -14,7 +14,7 @@ if(dropMove){
 		r = 2;
 		if(!point_in_rectangle(px, py, x - r, y - r, x+r, y+r)){
 			x = lerp(x, px, 0.1);	
-			y = lerp(x, py, 0.1);
+			y = lerp(y, py, 0.1);
 		}else{
 			var in = itemNum;
 			
@@ -48,9 +48,43 @@ if(dropMove){
 			}
 			
 			if(pickedUp){
-					instance_destroy();
-					show_debug_message("Picked up an item.");
+				
+				#region Create Notification
+				
+				if(!instance_exists(objNotification)) { instance_create_layer(0,0,"Instances", objNotification); }
+				var in = itemNum;
+				with(objNotification){
+					if(!ds_exists(ds_notifications, ds_type_grid)){
+						ds_notifications = ds_grid_create(2, 1);
+						var notGrid = ds_notifications;
+						notGrid[# 0, 0] = 1;
+						notGrid[# 1, 0] = inventory.ds_items_info[# 0, in];
+					} else{
+						var notGrid = ds_notifications;
+						var gridHeight = ds_grid_height(notGrid);
+						var name = inventory.ds_items_info[# 0, in];
+						var inGrid = false;
+						
+						var yy = 0; repeat (gridHeight){
+							if(name == notGrid[# 1, yy]){
+								notGrid[# 1, yy] += 1;
+								inGrid = true;
+								break;
+							}	
+							yy++;
+						}
+						
+						if(!inGrid){
+							
+						}
+					}
 				}
+				
+				#endregion
+				
+				instance_destroy();
+				show_debug_message("Picked up an item.");
+			}
 		}
 	}
 }
