@@ -1,6 +1,6 @@
 depth = -1;
-scale = 2;
-showInv = true;
+scale = 1;
+showInv = false;
 
 invSlots = 17;
 invSlotsWidth = 8;

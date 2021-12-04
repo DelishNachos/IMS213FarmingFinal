@@ -1,7 +1,7 @@
 event_inherited();
 
-sprBase = sprCharBaseFemale;
-sprTorso = sprCharTorsoFemaleShirtWhite;
-sprLegs = sprCharLegsFemalePantsRed;
-sprHair = sprCharHairFemalePonyTailBrown;
-sprFeet = sprCharFeet;
+sprBase = sprCharBaseMale;
+sprTorso = sprCharTorsoMaleShirtTeal;
+sprLegs = sprCharLegsMalePantsWhite;
+sprHair = sprCharHairMalePartedBlonde;
+sprFeet = sprCharFeetMaleShoesBrown;

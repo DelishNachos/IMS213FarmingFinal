@@ -16,7 +16,7 @@ sprBase = sprCharBaseMale;
 sprTorso = sprCharTorsoMaleShirtMaroon;
 sprLegs = sprCharLegsMalePantsWhite;
 sprHair = sprCharHairMaleBedHeadBlack;
-sprFeet = sprCharFeet;
+sprFeet = sprCharFeetMaleShoesBrown;
 sprShadow = sprCharShadow;
 
 facing = 0;

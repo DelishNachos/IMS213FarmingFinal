@@ -8,6 +8,6 @@ if(doTransition){
 	}
 	
 	draw_set_alpha(blackAlpha);
-	draw_rectangle_color(0, 0, guiWidth, guiHeight, c_black, c_black, c_black, c_black, false);
+	draw_rectangle_color(0, 0, global.gameWidth, global.gameHeight, c_black, c_black, c_black, c_black, false);
 	draw_set_alpha(1);
 }

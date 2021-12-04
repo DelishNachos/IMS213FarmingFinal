@@ -3,9 +3,6 @@ room_goto_next();
 
 debug = false;
 
-guiWidth = display_get_gui_width();
-guiHeight = display_get_gui_height();
-
 blackAlpha = 0;
 
 spawnRoom = -1;
@@ -20,3 +17,8 @@ enum dir{
 	left = 180,
 	down = 270
 }
+
+global.gameWidth = 750;
+global.gameHeight = 420;
+
+display_set_gui_size(global.gameWidth, global.gameHeight);
