@@ -4,6 +4,7 @@ inputUp = keyboard_check(vk_up);
 inputDown = keyboard_check(vk_down);
 inputWalk = keyboard_check(vk_control);
 inputRun = keyboard_check(vk_shift);
+inputInteract = keyboard_check_pressed(ord("E"));
 
 if (inputWalk or inputRun) {
 	spd = abs((inputWalk*wSpd) - (inputRun*rSpd));
@@ -61,6 +62,15 @@ if(inst != noone and facing == inst.playerFacingBefore) {
 			spawnPlayerFacing = inst.playerFacingAfter;
 			doTransition = true;
 		}
+	}
+}
+
+//Textbox
+if(inputInteract){
+	var inst = collision_rectangle(x - radius, y - radius, x + radius, y + radius, objParentNPC, false, false);	
+
+	if(inst != noone){
+		create_textbox(	
 	}
 }
 

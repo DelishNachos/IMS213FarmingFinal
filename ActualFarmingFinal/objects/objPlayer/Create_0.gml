@@ -22,5 +22,7 @@ sprShadow = sprCharShadow;
 facing = 0;
 
 portraitIndex = ;
-voice = sndVoice3;
+voice = sndVoice2;
 name = "Player";
+
+radius = 16;

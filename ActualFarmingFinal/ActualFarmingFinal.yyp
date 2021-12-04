@@ -11,6 +11,7 @@
     {"id":{"name":"sprCharTorsoMaleShirtTeal","path":"sprites/sprCharTorsoMaleShirtTeal/sprCharTorsoMaleShirtTeal.yy",},"order":1,},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"order":0,},
     {"id":{"name":"objNick","path":"objects/objNick/objNick.yy",},"order":2,},
+    {"id":{"name":"create_textbox","path":"scripts/create_textbox/create_textbox.yy",},"order":5,},
     {"id":{"name":"objAlyssa","path":"objects/objAlyssa/objAlyssa.yy",},"order":3,},
     {"id":{"name":"sprCharMask","path":"sprites/sprCharMask/sprCharMask.yy",},"order":0,},
     {"id":{"name":"objCollision","path":"objects/objCollision/objCollision.yy",},"order":3,},

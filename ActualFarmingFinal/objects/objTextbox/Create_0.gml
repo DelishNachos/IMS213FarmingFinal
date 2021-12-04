@@ -35,6 +35,7 @@ name = "";
 voice = sndVoice1;
 
 interactKey = mb_left;
+altInteractKey = ord("E");
 
 textCol = c_black;
 nameTextCol = c_black;
