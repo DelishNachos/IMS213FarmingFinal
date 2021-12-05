@@ -1,22 +1,47 @@
 /// @description 
 if(room != rm1){ planting = false; exit; }
 #region Planting
-if(keyboard_check_pressed(ord("P"))){ planting = !planting } 
+var hotGrid = inventory.ds_hotbar;
+var ss = inventory.hotSelectedSlot;
 
-if(planting){
-	mx = mouse_x;
-	my = mouse_y;
+var currentItem = hotGrid[# 0, ss];
+
+if((currentItem > 16 and currentItem  < 24) or currentItem == 0){
+
+	if(keyboard_check_pressed(ord("P"))){ planting = !planting } 
+
+	if(planting){	
+		mx = mouse_x;
+		my = mouse_y;
+		
+		if(currentItem == 0){
+			emptyHand = true;	
+		} else{
+			selectCrop = currentItem - 17;
+		}
 	
-	if(mouse_wheel_up()) selectCrop += 1; 
-	if(mouse_wheel_down()) selectCrop -= 1; 
+		/*if(mouse_wheel_up()) selectCrop += 1; 
+		if(mouse_wheel_down()) selectCrop -= 1; 
 	
-	if(selectCrop > sprite_get_number(sprCropsPicked)-1) { selectCrop = 0; }
-	else if (selectCrop < 0) { selectCrop = sprite_get_number(sprCropsPicked)-1; }
+		if(selectCrop > sprite_get_number(sprCropsPicked)-1) { selectCrop = 0; }
+		else if (selectCrop < 0) { selectCrop = sprite_get_number(sprCropsPicked)-1; }*/
 	
-	if(mouse_check_button_pressed(mb_left)){
-		instance_create_crop(mx, my, selectCrop);
-	}
-}	
+		if(mouse_check_button_pressed(mb_left)){
+			if(emptyHand){
+				
+			} else{
+				instance_create_crop(mx, my, selectCrop);
+				hotGrid[# 1, ss] -= 1;
+				if(hotGrid[# 1, ss] == 0) { hotGrid[# 0, ss] = item.none; }
+				with(inventory){
+					ds_inventory[# 0, ss] = hotGrid[# 0, ss]
+					ds_inventory[# 1, ss] = hotGrid[# 1, ss]
+				}
+			}
+		}
+	}	
+	
+} else { planting = false; }
 #endregion
 
 if(instance_exists(objCrop) and keyboard_check_pressed(ord("G"))){

@@ -24,6 +24,7 @@ create_crop_type(5, 50, "corn");	//corn
 
 planting = false;
 selectCrop = 0;
+emptyHand = false;
 
 mx = 0;
 my = 0; 
