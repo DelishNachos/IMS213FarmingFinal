@@ -1,8 +1,47 @@
-if(keyboard_check_pressed(ord("I"))) { showInv = !showInv; }
+#region manual hotbar
+	ds_hotbar[# 0, 0] = ds_inventory[# 0, 0];
+	ds_hotbar[# 1, 0] = ds_inventory[# 1, 0];
+	
+	ds_hotbar[# 0, 1] = ds_inventory[# 0, 1];
+	ds_hotbar[# 1, 1] = ds_inventory[# 1, 1];
+	
+	ds_hotbar[# 0, 2] = ds_inventory[# 0, 2];
+	ds_hotbar[# 1, 2] = ds_inventory[# 1, 2];
+	
+	ds_hotbar[# 0, 3] = ds_inventory[# 0, 3];
+	ds_hotbar[# 1, 3] = ds_inventory[# 1, 3];
+	
+	ds_hotbar[# 0, 4] = ds_inventory[# 0, 4];
+	ds_hotbar[# 1, 4] = ds_inventory[# 1, 4];
+	
+	ds_hotbar[# 0, 5] = ds_inventory[# 0, 5];
+	ds_hotbar[# 1, 5] = ds_inventory[# 1, 5];
+	
+	ds_hotbar[# 0, 6] = ds_inventory[# 0, 6];
+	ds_hotbar[# 1, 6] = ds_inventory[# 1, 6];
+	
+	ds_hotbar[# 0, 7] = ds_inventory[# 0, 7];
+	ds_hotbar[# 1, 7] = ds_inventory[# 1, 7];
+#endregion
 
+#region hotbar
+
+if(keyboard_check_pressed(ord("1"))) { hotSelectedSlot = 0; }
+else if (keyboard_check_pressed(ord("2"))){ hotSelectedSlot = 1; }
+else if (keyboard_check_pressed(ord("3"))){ hotSelectedSlot = 2; }
+else if (keyboard_check_pressed(ord("4"))){ hotSelectedSlot = 3; }
+else if (keyboard_check_pressed(ord("5"))){ hotSelectedSlot = 4; }
+else if (keyboard_check_pressed(ord("6"))){ hotSelectedSlot = 5; }
+else if (keyboard_check_pressed(ord("7"))){ hotSelectedSlot = 6; }
+else if (keyboard_check_pressed(ord("8"))){ hotSelectedSlot = 7; }
+
+#endregion
+
+#region inventory
+if(keyboard_check_pressed(ord("I"))) { showInv = !showInv; }
 if(!showInv) exit;
 
-#region Mouse Slot
+	#region Mouse Slot
 mouseX = device_mouse_x_to_gui(0);
 mouseY = device_mouse_y_to_gui(0);
 
@@ -27,7 +66,7 @@ if(nx >= 0 and nx < invSlotsWidth and ny >= 0 and ny < invSlotsHeight){
 } else { mouseInInv = false; }
 
 selectedSlot = min(invSlots - 1, mSlotX + (mSlotY * invSlotsWidth));
-#endregion
+	#endregion
 
 var invGrid = ds_inventory;
 var ssItem = invGrid[# 0, selectedSlot];
@@ -138,5 +177,7 @@ with(objNotification){
 	}
 }
 				
-#endregion
+	#endregion
 }
+
+#endregion

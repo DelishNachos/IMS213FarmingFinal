@@ -5,13 +5,15 @@ showInv = false;
 invSlots = 17;
 invSlotsWidth = 8;
 invSlotsHeight = 3;
-hotbarWidth = 8;
-horbarHeight = 1;
+hotSlots = 8;
+hotSlotsWidth = 8;
+hotSlotsHeight = 1;
 
 selectedSlot = 0;
 pickupSlot = -1;
 mSlotX = 0;
 mSlotY = 0;
+hotSelectedSlot = 0;
 
 xBuffer = 2;
 yBuffer = 4;
@@ -23,20 +25,28 @@ cellSize = 32;
 
 invWidth = 288;
 invHeight = 192;
+hotWidth = sprite_get_width(sprHotbarUI);
+hotHeight = sprite_get_height(sprHotbarUI);
 
 sprInvUI = sprInventoryUI;
 sprInvItems = sprInventoryItems;
+sprHotUI = sprHotbarUI;
 
 sprInvItemsColumns = sprite_get_width(sprInvItems) / cellSize;
+sprInvItemsRows = sprite_get_height(sprInvItems) / cellSize;
 
 invUIX = (guiWidth * .5) - (invWidth * .5 * scale);
 invUIY = (guiHeight * .5) - (invHeight * .5 * scale);
+hotUIX = (guiWidth * .5) - (hotWidth * .5 * scale);
+hotUIY = guiHeight - (hotHeight * .5 * scale) - 30;
 
 infoX = invUIX + (9 * scale);
 infoY = invUIY + (7 * scale);
 
 slotsX = infoX;
 slotsY = invUIY + (40 * scale);
+hotSlotsX = infoX;
+hotSlotsY = hotUIY + (8 * scale);
 
 descX = infoX;
 descY = invUIY + (156 * scale);

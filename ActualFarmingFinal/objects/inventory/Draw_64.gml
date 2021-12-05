@@ -1,4 +1,43 @@
+draw_sprite_ext(sprHotUI, 0, hotUIX, hotUIY, scale, scale, 0, c_white, 1);
 
+var hi, hix, hiy, xxx, yyy, hsx, hsy, hitem, hotGrid;
+hi = 0; hix = 0; hiy = 0; hotGrid = ds_hotbar;
+repeat(hotSlots){
+	//x y location for slot
+	xxx = hotSlotsX + ((cellSize+xBuffer) * hix * scale);
+	yyy = hotSlotsY + ((cellSize+yBuffer) * hiy * scale);
+	
+	//Item
+	hitem = hotGrid[# 0, hi];
+	hsx = (hitem mod sprInvItemsColumns) * cellSize;
+	hsy = (hitem div sprInvItemsColumns) * cellSize;
+	
+	//draw slot and item
+	draw_sprite_part_ext(sprInvUI, 0, 0, 0, cellSize, cellSize, xxx, yyy, scale, scale, c_white, 1);
+	switch(hi){
+		case hotSelectedSlot: 
+			gpu_set_blendmode(bm_add);
+			draw_sprite_part_ext(sprInvUI, 0, 0, 0, cellSize, cellSize, xxx, yyy, scale, scale, c_white, .3);
+			gpu_set_blendmode(bm_normal);
+			if(hitem > 0) draw_sprite_part_ext( sprInvItems, 0, hsx, hsy, cellSize, cellSize, xxx, yyy, scale, scale, c_white, 1);
+			
+		
+		default: if(hitem > 0) draw_sprite_part_ext( sprInvItems, 0, hsx, hsy, cellSize, cellSize, xxx, yyy, scale, scale, c_white, 1); break;
+	}
+	
+	if(hitem > 0) draw_sprite_part_ext( sprInvItems, 0, hsx, hsy, cellSize, cellSize, xxx, yyy, scale, scale, c_white, 1);
+	
+	//draw item number
+	if(hitem > 0){
+		var hNumber = hotGrid[# 1, hi];
+		draw_set_font(fntNums);
+		draw_text_color(xxx, yyy, string(hNumber), c_black, c_black, c_black, c_black, 1);
+	}
+	
+	hi++;
+	hix = hi mod hotSlotsWidth;
+	hiy = hi div hotSlotsWidth;
+}
 
 if(!showInv) exit;
 
