@@ -35,14 +35,14 @@ else if (keyboard_check_pressed(ord("6"))){ hotSelectedSlot = 5; }
 else if (keyboard_check_pressed(ord("7"))){ hotSelectedSlot = 6; }
 else if (keyboard_check_pressed(ord("8"))){ hotSelectedSlot = 7; }
 
-if(mouse_wheel_up()){
+if(mouse_wheel_down()){
 	if(hotSelectedSlot == 7){
 		hotSelectedSlot = 0;	
 	}else{
 		hotSelectedSlot++;	
 	}
 }
-if(mouse_wheel_down()){
+if(mouse_wheel_up()){
 	if(hotSelectedSlot == 0){
 		hotSelectedSlot = 7	
 	}else{

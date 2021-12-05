@@ -14,6 +14,8 @@ if(cell == 0){
 	var mapID = layer_tilemap_get_id(layID);
 	var data = tilemap_get_at_pixel(mapID, mx, my);
 	if(data != 0) {c = c_lime;}
+} else if(emptyHand){
+	c = c_lime;	
 }
 
 	xx = gx*cs;
@@ -22,4 +24,6 @@ if(cell == 0){
 	draw_rectangle_color(xx, yy, xx+cs, yy+cs, c,c,c,c, true);
 
 	//Draw the crop to be planted
-	draw_sprite(sprCropsPicked, selectCrop, xx + (cs/2), yy + (cs/2));
+	if(!emptyHand){
+		draw_sprite(sprCropsPicked, selectCrop, xx + (cs/2), yy + (cs/2));
+	}
