@@ -16,3 +16,4 @@ text = [
 	"I hope to see you around."
 ];
 speakers = [id, objPlayer, id, id];
+nextLine = [0, 0, 0, -1];

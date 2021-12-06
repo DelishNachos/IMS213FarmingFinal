@@ -7,7 +7,7 @@ if(!is_array(text[page])) {
 	strLength = string_length(textWrapped);
 	choiceDialogue = false;
 } else {
-	textArray = text[page]
+	textArray = text[page];
 	textArrayLength = array_length(textArray);
 	choiceDialogue = true;
 }
