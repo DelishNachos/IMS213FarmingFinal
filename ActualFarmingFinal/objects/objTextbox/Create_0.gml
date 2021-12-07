@@ -34,6 +34,7 @@ page = 0;
 speakerName = "";
 voice = sndVoice1;
 
+
 interactKey = mb_left;
 altInteractKey = ord("E");
 

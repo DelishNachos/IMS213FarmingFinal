@@ -1,3 +1,5 @@
+if(instance_exists(objTextbox)) exit;
+
 draw_sprite_ext(sprHotUI, 0, hotUIX, hotUIY, scale, scale, 0, c_white, 1);
 
 var hi, hix, hiy, xxx, yyy, hsx, hsy, hitem, hotGrid;

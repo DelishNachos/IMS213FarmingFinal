@@ -27,5 +27,7 @@ scripts = [
 		[change_variable, id, "sprTorso", sprCharTorsoMaleShirtMaroon],
 	],
 	-1,
-	-1
+	[
+		change_variable, id, "sprLegs", -1
+	]
 ];

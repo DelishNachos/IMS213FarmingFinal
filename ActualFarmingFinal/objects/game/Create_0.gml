@@ -1,6 +1,8 @@
 randomize();
 room_goto_next();
 
+global.storedVariable = -1;
+
 debug = false;
 
 blackAlpha = 0;

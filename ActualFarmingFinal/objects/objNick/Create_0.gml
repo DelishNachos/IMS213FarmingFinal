@@ -11,7 +11,7 @@ voice = sndVoice3;
 speakerName = "Nick";
 text = [
 	"Are you new around here?", 
-	"Yeah, I just moved in", 
+	"Yeah, I just moved in.", 
 	"Oh cool! My name is Nick so talk to me if you ever have any sort of question about this place.", 
 	"I hope to see you around."
 ];

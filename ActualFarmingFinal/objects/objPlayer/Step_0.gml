@@ -6,6 +6,8 @@ inputWalk = keyboard_check(vk_control);
 inputRun = keyboard_check(vk_shift);
 inputInteract = keyboard_check_pressed(ord("E"));
 
+if(instance_exists(objTextbox)) exit;
+
 if (inputWalk or inputRun) {
 	spd = abs((inputWalk*wSpd) - (inputRun*rSpd));
 } else{
