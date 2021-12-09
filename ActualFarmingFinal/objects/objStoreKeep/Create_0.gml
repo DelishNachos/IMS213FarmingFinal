@@ -6,6 +6,8 @@ sprLegs = sprCharLegsMaleArmorMetal;
 sprHair = sprCharHairMalePartedBlack;
 sprFeet = sprCharFeetMaleShoesBrown;
 
+variableStored = -1;
+variableStored2 = -1;
 portraitIndex = 3;
 voice = sndVoice4;
 speakerName = "Shopkeep";
@@ -86,22 +88,22 @@ scripts = [
 	],
 	-1,
 	[ 
-		[store_variable, 0],
-		[store_variable, 1],
-		[store_variable, 2],
-		[store_variable, 3],
-		[store_variable, 4],
-		[store_variable, 5],
-		[store_variable, 6]
+		[store_variable, 0, id],
+		[store_variable, 1, id],
+		[store_variable, 2, id],
+		[store_variable, 3, id],
+		[store_variable, 4, id],
+		[store_variable, 5, id],
+		[store_variable, 6, id]
 	],
 	[
-		[selling_crop, global.storedVariable, 1],
-		[selling_crop, global.storedVariable, 2],
-		[selling_crop, global.storedVariable, 3],
-		[selling_crop, global.storedVariable, 4],
-		[selling_crop, global.storedVariable, 5],
-		[selling_crop, global.storedVariable, 10],
-		[selling_crop, global.storedVariable, 20]
+		[run_user_event, id, 0, 1],
+		[run_user_event, id, 0, 2],
+		[run_user_event, id, 0, 3],
+		[run_user_event, id, 0, 4],
+		[run_user_event, id, 0, 5],
+		[run_user_event, id, 0, 10],
+		[run_user_event, id, 0, 20]
 	],
 	-1
 ];

@@ -1,6 +1,7 @@
 function selling_crop(_cropType, amt){
 	show_debug_message("Running the script");
-	
+	show_debug_message(amt);
+	show_debug_message(_cropType);
 	var foundItem = false;
 	
 	var invGrid = inventory.ds_inventory;

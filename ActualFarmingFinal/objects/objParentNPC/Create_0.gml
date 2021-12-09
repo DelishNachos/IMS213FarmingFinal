@@ -25,6 +25,8 @@ canMove = true;
 
 alarm[1] = 1 * room_speed;
 
+variableStored = -1;
+variableStored2 = -1;
 portraitIndex = 0;
 voice = sndVoice1;
 speakerName = "Anonymous";
