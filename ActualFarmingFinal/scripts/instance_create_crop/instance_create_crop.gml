@@ -28,6 +28,7 @@ function instance_create_crop(argument0, argument1, argument2) {
 		//Create the instance
 		var inst = instance_create_layer(xx + (cs/2), yy + (cs/2), "Instances", objCrop);
 		iGrid[# gx, gy] = inst;
+		audio_play_sound(sndShovelSound, 1, false);
 
 		//Give the crop its characteristics
 		with(inst){

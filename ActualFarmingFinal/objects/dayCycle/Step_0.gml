@@ -1,5 +1,5 @@
-if(keyboard_check_pressed(ord("T"))) {timePause = !timePause;}
-if(timePause) exit;
+//if(keyboard_check_pressed(ord("T"))) {timePause = !timePause;}
+//if(timePause) exit;
 
 seconds += timeIncrement;
 minutes = seconds/60;
@@ -32,7 +32,7 @@ if(drawDaylight){
 	}
 	#endregion
 	
-	#region Alter Darjkness and Color Depending on Time
+	#region Alter Darkness and Color Depending on Time
 	
 	if (pstart == phase.nighttime) {lightColor = colors[0];}
 	else{
