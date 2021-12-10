@@ -196,3 +196,23 @@ with(objNotification){
 }
 
 #endregion
+
+#region Money Calculator
+	var playGrid = ds_player_info;
+	var bronze = 0;
+	var silver = 0;
+	var gold = 0;
+	
+	if(playGrid[# 1, 2] >= 100){
+		bronze = playGrid[# 1, 2] mod 100;
+		silver = playGrid[# 1, 2] div 100;
+		playGrid[# 1, 2] = bronze;
+		playGrid[# 1, 1] += silver
+	}
+	if(playGrid[# 1, 1] >= 100){
+		silver = playGrid[# 1, 1] mod 100;
+		gold = playGrid[# 1, 1] div 100;
+		playGrid[# 1, 1] = silver;
+		playGrid[# 1, 0] += gold;
+	}
+#endregion

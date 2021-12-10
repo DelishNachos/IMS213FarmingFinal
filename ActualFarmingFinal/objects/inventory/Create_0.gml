@@ -59,9 +59,9 @@ infoGrid[# 0, 1] = "Silver";
 infoGrid[# 0, 2] = "Bronze";
 infoGrid[# 0, 3] = "Name";
 
-infoGrid[# 1, 0] = irandom_range(0, 99);
-infoGrid[# 1, 1] = irandom_range(0, 99);
-infoGrid[# 1, 2] = irandom_range(0, 99);
+infoGrid[# 1, 0] = 1;
+infoGrid[# 1, 1] = 5;
+infoGrid[# 1, 2] = 20;
 infoGrid[# 1, 3] = "Player";
 
 
@@ -98,7 +98,7 @@ enum item{
 
 #region Create Items Info Grid
 
-ds_items_info = ds_grid_create(2, item.height);
+ds_items_info = ds_grid_create(3, item.height);
 
 var z = 0, i = 0;
 ds_items_info[# z, i++] = "Nothing";
@@ -151,6 +151,32 @@ ds_items_info[# z, i++] = "Seeds but for Artichokes.";
 ds_items_info[# z, i++] = "Seeds but for Chilli.";
 ds_items_info[# z, i++] = "Seeds but for Gourds.";
 ds_items_info[# z, i++] = "Seeds but for Corn.";
+
+z = 2; i = 0;
+ds_items_info[# z, i++] = 0;
+ds_items_info[# z, i++] = 0;
+ds_items_info[# z, i++] = 0;
+ds_items_info[# z, i++] = 0;
+ds_items_info[# z, i++] = 0;
+ds_items_info[# z, i++] = 0;
+ds_items_info[# z, i++] = 0;
+ds_items_info[# z, i++] = 0;
+ds_items_info[# z, i++] = 0;
+ds_items_info[# z, i++] = 0;
+ds_items_info[# z, i++] = 0;
+ds_items_info[# z, i++] = 0;
+ds_items_info[# z, i++] = 0;
+ds_items_info[# z, i++] = 0;
+ds_items_info[# z, i++] = 0;
+ds_items_info[# z, i++] = 0;
+ds_items_info[# z, i++] = 0;
+ds_items_info[# z, i++] = 20;
+ds_items_info[# z, i++] = 15;
+ds_items_info[# z, i++] = 10;
+ds_items_info[# z, i++] = 20;
+ds_items_info[# z, i++] = 15;
+ds_items_info[# z, i++] = 10;
+ds_items_info[# z, i++] = 25;
 
 #endregion
 

@@ -20,13 +20,13 @@ text = [
 	], 
 	"What do you want to purchase?",
 	[
-		"Buy Tomatoes Seeds",
-		"Buy Potatoes Seeds",
-		"Buy Carrots Seeds",
-		"Buy Artichokes Seeds",
-		"Buy Chillis Seeds", 
-		"Buy Gourds Seeds",
-		"Buy Corn Seeds"
+		"Buy Tomatoes Seeds		(20)",
+		"Buy Potatoes Seeds		(15)",
+		"Buy Carrots Seeds		(10)",
+		"Buy Artichokes Seeds	(20)",
+		"Buy Chillis Seeds		(15)", 
+		"Buy Gourds Seeds		(10)",
+		"Buy Corn Seeds			(25)"
 	],
 	[
 		"Buy 1 Seed.",
@@ -39,13 +39,13 @@ text = [
 	],
 	"What do you want to sell?",
 	[
-		"Sell Tomatoes",
-		"Sell Potatoes",
-		"Sell Carrots",
-		"Sell Artichokes",
-		"Sell Chillis", 
-		"Sell Gourds",
-		"Sell Corn"
+		"Sell Tomatoes		(40)",
+		"Sell Potatoes		(35)",
+		"Sell Carrots		(25)",
+		"Sell Artichokes	(45)",
+		"Sell Chillis		(30)", 
+		"Sell Gourds		(20)",
+		"Sell Corn			(50)"
 	],
 	[
 		"Sell 1 crop.",
@@ -69,22 +69,22 @@ scripts = [
 	],
 	-1,
 	[
-		-1,
-		-1,
-		-1,
-		-1,
-		-1,
-		-1,
-		-1
+		[store_variable, 17, id],
+		[store_variable, 18, id],
+		[store_variable, 19, id],
+		[store_variable, 20, id],
+		[store_variable, 21, id],
+		[store_variable, 22, id],
+		[store_variable, 23, id]
 	],
 	[
-		-1,
-		-1,
-		-1,
-		-1,
-		-1,
-		-1,
-		-1
+		[run_user_event, id, 1, 1],
+		[run_user_event, id, 1, 2],
+		[run_user_event, id, 1, 3],
+		[run_user_event, id, 1, 4],
+		[run_user_event, id, 1, 5],
+		[run_user_event, id, 1, 10],
+		[run_user_event, id, 1, 20]
 	],
 	-1,
 	[ 

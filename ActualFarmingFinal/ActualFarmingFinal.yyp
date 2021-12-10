@@ -60,6 +60,7 @@
     {"id":{"name":"run_user_event","path":"scripts/run_user_event/run_user_event.yy",},"order":11,},
     {"id":{"name":"sprTerrain","path":"sprites/sprTerrain/sprTerrain.yy",},"order":2,},
     {"id":{"name":"inventory","path":"objects/inventory/inventory.yy",},"order":7,},
+    {"id":{"name":"buy_seed","path":"scripts/buy_seed/buy_seed.yy",},"order":12,},
     {"id":{"name":"fntNums","path":"fonts/fntNums/fntNums.yy",},"order":2,},
     {"id":{"name":"instance_create_crop","path":"scripts/instance_create_crop/instance_create_crop.yy",},"order":1,},
     {"id":{"name":"sprCharHairFemalePonyTailBrown","path":"sprites/sprCharHairFemalePonyTailBrown/sprCharHairFemalePonyTailBrown.yy",},"order":5,},
