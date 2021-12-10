@@ -1,10 +1,10 @@
 moveCam = keyboard_check(ord("C"));
 
 if(moveCam){
-	inputLeft = keyboard_check(ord("A"));
-	inputRight = keyboard_check(ord("D"));
-	inputUp = keyboard_check(ord("W"));
-	inputDown = keyboard_check(ord("S"));
+	inputLeft = keyboard_check(vk_left);
+	inputRight = keyboard_check(vk_right);
+	inputUp = keyboard_check(vk_up);
+	inputDown = keyboard_check(vk_down);
 	
 	x += (inputRight - inputLeft)*6;
 	y += (inputDown - inputUp)*6;

@@ -1,3 +1,5 @@
+event_inherited();
+
 wSpd = 1;
 nSpd = 2;
 rSpd = 3;
@@ -19,5 +21,16 @@ sprShadow = sprCharShadow;
 
 moveX = 0;
 moveY = 0;
+canMove = true;
 
 alarm[1] = 1 * room_speed;
+
+variableStored = -1;
+variableStored2 = -1;
+portraitIndex = 0;
+voice = sndVoice1;
+speakerName = "Anonymous";
+text = ["This person has nothing to say."];
+speakers = [id];
+nextLine = [0];
+scripts = -1;

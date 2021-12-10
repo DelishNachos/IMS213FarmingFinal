@@ -1,10 +1,11 @@
 randomize();
 room_goto_next();
 
-debug = false;
+audio_play_sound(sndBackgroundAudio, 0, true);
 
-guiWidth = display_get_gui_width();
-guiHeight = display_get_gui_height();
+global.storedVariable = -1;
+
+debug = false;
 
 blackAlpha = 0;
 
@@ -20,3 +21,8 @@ enum dir{
 	left = 180,
 	down = 270
 }
+
+global.gameWidth = 750;
+global.gameHeight = 420;
+
+display_set_gui_size(global.gameWidth, global.gameHeight);

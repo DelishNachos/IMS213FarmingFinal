@@ -1,15 +1,15 @@
 {
   "spriteId": null,
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": {
     "name": "sprCharMask",
     "path": "sprites/sprCharMask/sprCharMask.yy",
   },
   "persistent": false,
   "parentObjectId": {
-    "name": "objCollision",
-    "path": "objects/objCollision/objCollision.yy",
+    "name": "parDepthObj",
+    "path": "objects/parDepthObj/parDepthObj.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -33,7 +33,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Characters",
-    "path": "folders/Objects/Characters.yy",
+    "path": "folders/Objects/Beings/Characters.yy",
   },
   "resourceVersion": "1.0",
   "name": "objParentNPC",

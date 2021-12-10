@@ -1,3 +1,5 @@
+event_inherited();
+
 wSpd = 1;
 nSpd = 3;
 rSpd = 4;
@@ -14,7 +16,14 @@ sprBase = sprCharBaseMale;
 sprTorso = sprCharTorsoMaleShirtMaroon;
 sprLegs = sprCharLegsMalePantsWhite;
 sprHair = sprCharHairMaleBedHeadBlack;
-sprFeet = sprCharFeet;
+sprFeet = sprCharFeetMaleShoesBrown;
 sprShadow = sprCharShadow;
 
 facing = 0;
+
+portraitIndex = 7;
+voice = sndVoice2;
+speakerName = "Player";
+
+radius = 24;
+activeTextbox = noone;

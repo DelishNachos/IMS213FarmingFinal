@@ -1,0 +1,1 @@
+buy_seed(variableStored, variableStored2)

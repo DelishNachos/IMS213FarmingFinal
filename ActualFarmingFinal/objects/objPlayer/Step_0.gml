@@ -1,9 +1,12 @@
-inputLeft = keyboard_check(vk_left);
-inputRight = keyboard_check(vk_right);
-inputUp = keyboard_check(vk_up);
-inputDown = keyboard_check(vk_down);
+inputLeft = keyboard_check(ord("A"));
+inputRight = keyboard_check(ord("D"));
+inputUp = keyboard_check(ord("W"));
+inputDown = keyboard_check(ord("S"));
 inputWalk = keyboard_check(vk_control);
 inputRun = keyboard_check(vk_shift);
+inputInteract = keyboard_check_pressed(ord("E"));
+
+if(instance_exists(objTextbox)) exit;
 
 if (inputWalk or inputRun) {
 	spd = abs((inputWalk*wSpd) - (inputRun*rSpd));
@@ -30,7 +33,8 @@ if(moveX != 0) {
 } else facing = -1;
 
 if(moveX != 0) {
-	if(place_meeting(x+moveX, y, objCollision)){
+	var collisionH = instance_place(x+moveX, y, objCollision)
+	if(collisionH != noone and collisionH.collideable){
 		repeat(abs(moveX)){
 			if(!place_meeting(x+sign(moveX), y, objCollision)) {x += sign(moveX); }
 			else {break;}
@@ -40,7 +44,8 @@ if(moveX != 0) {
 }
 
 else if(moveY != 0){
-	if(place_meeting(x, y+moveY, objCollision)){
+	var collisionV = instance_place(x, y+moveY, objCollision)
+	if(collisionV != noone and collisionV.collideable){
 		repeat(abs(moveY)){
 			if(!place_meeting(x, y+sign(moveY), objCollision)) {y += sign(moveY);}
 			else {break;}
@@ -58,6 +63,28 @@ if(inst != noone and facing == inst.playerFacingBefore) {
 			spawnY = inst.targetY;
 			spawnPlayerFacing = inst.playerFacingAfter;
 			doTransition = true;
+		}
+	}
+}
+
+//Textbox
+if(inputInteract){
+	
+	if(activeTextbox == noone){
+	
+		var inst = collision_rectangle(x - radius, y - radius, x + radius, y + radius, objParentNPC, false, false);	
+
+		if(inst != noone){
+			with(inst){
+				var tbox = create_textbox(text, speakers, nextLine, scripts);
+				canMove = false;
+				moveX = 0; moveY = 0;
+			}
+			activeTextbox = tbox;
+		}
+	} else{
+		if(!instance_exists(activeTextbox)){
+			activeTextbox = noone;	
 		}
 	}
 }
