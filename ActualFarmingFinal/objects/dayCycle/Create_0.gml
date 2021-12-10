@@ -1,4 +1,4 @@
-seconds = 0;
+seconds = 43200;
 minutes = 0;
 hours = 0;
 
@@ -6,7 +6,7 @@ day = 1;
 season = 1;
 year = 1;
 
-timeIncrement = 100;
+timeIncrement = 10;
 timePause = true;
 
 maxDarkness = .7;

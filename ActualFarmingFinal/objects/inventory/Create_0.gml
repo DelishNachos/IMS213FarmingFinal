@@ -59,8 +59,8 @@ infoGrid[# 0, 1] = "Silver";
 infoGrid[# 0, 2] = "Bronze";
 infoGrid[# 0, 3] = "Name";
 
-infoGrid[# 1, 0] = 1;
-infoGrid[# 1, 1] = 5;
+infoGrid[# 1, 0] = 0;
+infoGrid[# 1, 1] = 0;
 infoGrid[# 1, 2] = 20;
 infoGrid[# 1, 3] = "Player";
 
@@ -182,8 +182,11 @@ ds_items_info[# z, i++] = 25;
 
 ds_hotbar = ds_grid_create(2,8)
 
-var yy = 0; repeat(invSlots){
+/*var yy = 0; repeat(invSlots){
 	dsInv[# 0, yy] = irandom_range(1, item.height-1); 
 	dsInv[# 1, yy] = irandom_range(1, 10);
 	yy++;
-}
+}*/
+
+dsInv[# 0, 0] = item.tomatoSeeds;
+dsInv[# 1, 0] = 3;

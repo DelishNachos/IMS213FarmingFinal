@@ -67,6 +67,7 @@
     {"id":{"name":"fntRegText","path":"fonts/fntRegText/fntRegText.yy",},"order":0,},
     {"id":{"name":"sprCharLegsMalePantsWhite","path":"sprites/sprCharLegsMalePantsWhite/sprCharLegsMalePantsWhite.yy",},"order":0,},
     {"id":{"name":"sprNamebox","path":"sprites/sprNamebox/sprNamebox.yy",},"order":3,},
+    {"id":{"name":"sndBackgroundAudio","path":"sounds/sndBackgroundAudio/sndBackgroundAudio.yy",},"order":4,},
     {"id":{"name":"sprCharBaseMaleDark","path":"sprites/sprCharBaseMaleDark/sprCharBaseMaleDark.yy",},"order":1,},
     {"id":{"name":"objStoreKeep","path":"objects/objStoreKeep/objStoreKeep.yy",},"order":5,},
     {"id":{"name":"rmHouse","path":"rooms/rmHouse/rmHouse.yy",},"order":3,},

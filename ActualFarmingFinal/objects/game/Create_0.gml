@@ -1,6 +1,8 @@
 randomize();
 room_goto_next();
 
+audio_play_sound(sndBackgroundAudio, 0, true);
+
 global.storedVariable = -1;
 
 debug = false;

@@ -1,7 +1,7 @@
-inputLeft = keyboard_check(vk_left);
-inputRight = keyboard_check(vk_right);
-inputUp = keyboard_check(vk_up);
-inputDown = keyboard_check(vk_down);
+inputLeft = keyboard_check(ord("A"));
+inputRight = keyboard_check(ord("D"));
+inputUp = keyboard_check(ord("W"));
+inputDown = keyboard_check(ord("S"));
 inputWalk = keyboard_check(vk_control);
 inputRun = keyboard_check(vk_shift);
 inputInteract = keyboard_check_pressed(ord("E"));

@@ -20,13 +20,13 @@ text = [
 	], 
 	"What do you want to purchase?",
 	[
-		"Buy Tomatoes Seeds		(20)",
-		"Buy Potatoes Seeds		(15)",
-		"Buy Carrots Seeds		(10)",
-		"Buy Artichokes Seeds	(20)",
-		"Buy Chillis Seeds		(15)", 
-		"Buy Gourds Seeds		(10)",
-		"Buy Corn Seeds			(25)"
+		"Buy Tomatoes Seeds     (20)",
+		"Buy Potatoes Seeds     (15)",
+		"Buy Carrots Seeds      (10)",
+		"Buy Artichokes Seeds   (20)",
+		"Buy Chillis Seeds      (15)", 
+		"Buy Gourds Seeds       (10)",
+		"Buy Corn Seeds         (25)"
 	],
 	[
 		"Buy 1 Seed.",
@@ -39,13 +39,13 @@ text = [
 	],
 	"What do you want to sell?",
 	[
-		"Sell Tomatoes		(40)",
-		"Sell Potatoes		(35)",
-		"Sell Carrots		(25)",
-		"Sell Artichokes	(45)",
-		"Sell Chillis		(30)", 
-		"Sell Gourds		(20)",
-		"Sell Corn			(50)"
+		"Sell Tomatoes      (40)",
+		"Sell Potatoes      (35)",
+		"Sell Carrots       (25)",
+		"Sell Artichokes    (45)",
+		"Sell Chillis       (30)", 
+		"Sell Gourds        (20)",
+		"Sell Corn          (50)"
 	],
 	[
 		"Sell 1 crop.",

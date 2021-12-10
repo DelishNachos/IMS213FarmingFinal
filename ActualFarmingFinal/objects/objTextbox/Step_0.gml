@@ -16,7 +16,7 @@ if(mouse_check_button_pressed(interactKey) or keyboard_check_pressed(altInteract
 }
 
 if(choiceDialogue){
-	choice += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
+	choice += keyboard_check_pressed(ord("D")) - keyboard_check_pressed(ord("W"));
 	
 	if(choice > textArrayLength-1) choice = 0;
 	if(choice < 0) choice = textArrayLength - 1;

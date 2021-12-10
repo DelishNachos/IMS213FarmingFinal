@@ -53,7 +53,7 @@ if(mouse_wheel_up()){
 #endregion
 
 #region inventory
-if(keyboard_check_pressed(ord("I"))) { showInv = !showInv; }
+if(keyboard_check_pressed(vk_tab)) { showInv = !showInv; }
 if(!showInv) exit;
 
 	#region Mouse Slot
