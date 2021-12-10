@@ -151,9 +151,7 @@
   "TextureGroups": [
     {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
   ],
-  "IncludedFiles": [
-    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"464ddad1880e76994f1c0e7ca599a22a.zip","resourceType":"GMIncludedFile",},
-  ],
+  "IncludedFiles": [],
   "MetaData": {
     "IDEVersion": "2.3.3.574",
   },
